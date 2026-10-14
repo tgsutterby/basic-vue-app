@@ -1,0 +1,43 @@
+@theme {
+  --scrollbar-track-basic: var(--color-slate-900);
+  --scrollbar-thumb-basic: var(--color-slate-600);
+  --scrollbar-basic: var(--scrollbar-thumb-basic) var(--scrollbar-track-basic);
+}
+
+@utility style-basic {
+  &:not(.dark) {
+    .aside {
+      @apply bg-slate-500;
+    }
+    .aside-scrollbar {
+      @apply scrollbar-styled-basic;
+    }
+    .aside-brand {
+      @apply bg-slate-600 text-white;
+    }
+    .aside-menu-item {
+      @apply text-white hover:bg-slate-600 hover:text-blue-500;
+    }
+    .aside-menu-item-active {
+      @apply text-blue-500;
+    }
+    .aside-menu-dropdown {
+      @apply bg-slate-500 border-2 border-slate-600 rounded;
+    }
+    .navbar-item-label {
+      @apply text-black hover:text-blue-500;
+    }
+    .navbar-item-label-active {
+      @apply text-blue-500;
+    }
+    .navbar-dropdown {
+      @apply bg-slate-500 lg:border-2 lg:border-slate-600;
+    }
+    .overlay {
+      @apply from-slate-500 via-slate-700 to-slate-600;
+    }
+    .view-banner {
+        @apply bg-gradient-to-tr from-slate-500 via-slate-600 to-slate-500;
+    }
+  }
+}

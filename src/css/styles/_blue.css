@@ -1,0 +1,43 @@
+@theme {
+  --scrollbar-track-basic: var(--color-blue-900);
+  --scrollbar-thumb-basic: var(--color-blue-600);
+  --scrollbar-basic: var(--scrollbar-thumb-basic) var(--scrollbar-track-basic);
+}
+
+@utility style-blue {
+  &:not(.dark) {
+    .aside {
+      @apply bg-blue-500;
+    }
+    .aside-scrollbar {
+      @apply scrollbar-styled-basic;
+    }
+    .aside-brand {
+      @apply bg-blue-600 text-white;
+    }
+    .aside-menu-item {
+      @apply text-white hover:bg-blue-600 hover:font-bold;
+    }
+    .aside-menu-item-active {
+      @apply font-bold;
+    }
+    .aside-menu-dropdown {
+      @apply bg-blue-500 border-2 border-blue-600 rounded;
+    }
+    .navbar-item-label {
+      @apply text-black hover:font-bold;
+    }
+    .navbar-item-label-active {
+      @apply font-bold;
+    }
+    .navbar-dropdown {
+      @apply bg-blue-500 lg:border-2 lg:border-blue-600;
+    }
+    .overlay {
+      @apply from-blue-500 via-blue-700 to-blue-600;
+    }
+    .view-banner {
+        @apply bg-gradient-to-tr from-blue-500 via-blue-600 to-blue-500;
+    }
+  }
+}

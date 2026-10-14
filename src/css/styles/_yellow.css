@@ -1,0 +1,43 @@
+@theme {
+  --scrollbar-track-basic: var(--color-yellow-900);
+  --scrollbar-thumb-basic: var(--color-yellow-600);
+  --scrollbar-basic: var(--scrollbar-thumb-basic) var(--scrollbar-track-basic);
+}
+
+@utility style-yellow {
+  &:not(.dark) {
+    .aside {
+      @apply bg-yellow-500;
+    }
+    .aside-scrollbar {
+      @apply scrollbar-styled-basic;
+    }
+    .aside-brand {
+      @apply bg-yellow-600 text-white;
+    }
+    .aside-menu-item {
+      @apply text-white hover:bg-yellow-600 hover:text-blue-500;
+    }
+    .aside-menu-item-active {
+      @apply text-blue-500;
+    }
+    .aside-menu-dropdown {
+      @apply bg-yellow-500 border-2 border-yellow-600 rounded;
+    }
+    .navbar-item-label {
+      @apply text-black hover:text-blue-500;
+    }
+    .navbar-item-label-active {
+      @apply text-blue-500;
+    }
+    .navbar-dropdown {
+      @apply bg-yellow-500 lg:border-2 lg:border-yellow-600;
+    }
+    .overlay {
+      @apply from-yellow-500 via-yellow-700 to-yellow-600;
+    }
+    .view-banner {
+        @apply bg-gradient-to-tr from-yellow-500 via-yellow-600 to-yellow-500;
+    }
+  }
+}

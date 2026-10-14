@@ -1,0 +1,43 @@
+@theme {
+  --scrollbar-track-basic: var(--color-pink-900);
+  --scrollbar-thumb-basic: var(--color-pink-600);
+  --scrollbar-basic: var(--scrollbar-thumb-basic) var(--scrollbar-track-basic);
+}
+
+@utility style-pink {
+  &:not(.dark) {
+    .aside {
+      @apply bg-pink-500;
+    }
+    .aside-scrollbar {
+      @apply scrollbar-styled-basic;
+    }
+    .aside-brand {
+      @apply bg-pink-600 text-white;
+    }
+    .aside-menu-item {
+      @apply text-white hover:bg-pink-600 hover:text-blue-500;
+    }
+    .aside-menu-item-active {
+      @apply text-blue-500;
+    }
+    .aside-menu-dropdown {
+      @apply bg-pink-500 border-2 border-pink-600 rounded;
+    }
+    .navbar-item-label {
+      @apply text-black hover:text-blue-500;
+    }
+    .navbar-item-label-active {
+      @apply text-blue-500;
+    }
+    .navbar-dropdown {
+      @apply bg-pink-500 lg:border-2 lg:border-pink-600;
+    }
+    .overlay {
+      @apply from-pink-500 via-pink-700 to-pink-600;
+    }
+    .view-banner {
+        @apply bg-gradient-to-tr from-pink-500 via-pink-600 to-pink-500;
+    }
+  }
+}
